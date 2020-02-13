@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import { Skeleton } from '@material-ui/lab';
+
 
 function Copyright() {
   return (
@@ -46,6 +46,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   cardMedia: {
+    
     paddingTop: '56.25%', // 16:9
   },
   cardContent: {
@@ -63,7 +64,7 @@ export default function Album(props) {
   const classes = useStyles();
 
   const cardData = props.data.characters.results;
-  console.log(props);
+  
   
 
   return (
